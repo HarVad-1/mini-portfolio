@@ -1,0 +1,377 @@
+.navbar_image {
+  margin-left: 30px;
+}
+
+.container-fluid {
+  background-color: aliceblue;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.typewriter-hello > h1 {
+  color: rgb(247, 111, 8);
+  font-family: "DM Sans", sans-serif;
+  font-size: 90px;
+}
+h1,
+a {
+  font-family: "DM Sans", sans-serif;
+}
+
+li {
+  padding-right: 15px;
+}
+
+.typewriter-hello h1:hover {
+  color: rgb(13, 222, 13);
+}
+
+.mainlogo {
+  min-width: 500px;
+  padding-top: 75px;
+}
+
+@keyframes typing {
+  0.0000%,
+  27.3488% {
+    content: "";
+  }
+  1.1395%,
+  26.2093% {
+    content: "d";
+  }
+  2.2791%,
+  25.0698% {
+    content: "de";
+  }
+  3.4186%,
+  23.9302% {
+    content: "dev";
+  }
+  4.5581%,
+  22.7907% {
+    content: "deve";
+  }
+  5.6977%,
+  21.6512% {
+    content: "devel";
+  }
+  6.8372%,
+  20.5116% {
+    content: "develo";
+  }
+  7.9767%,
+  19.3721% {
+    content: "develop";
+  }
+  9.1163%,
+  18.2326% {
+    content: "develope";
+  }
+  10.2558%,
+  17.0930% {
+    content: "developer";
+  }
+
+  30.7674%,
+  51.2791% {
+    content: "";
+  }
+  31.9070%,
+  50.1395% {
+    content: "w";
+  }
+  33.0465%,
+  49.0000% {
+    content: "wr";
+  }
+  34.1860%,
+  47.8605% {
+    content: "wri";
+  }
+  35.3256%,
+  46.7209% {
+    content: "writ";
+  }
+  36.4651%,
+  45.5814% {
+    content: "write";
+  }
+  37.6047%,
+  44.4419% {
+    content: "writer";
+  }
+
+  54.6977%,
+  75.2093% {
+    content: "";
+  }
+  55.8372%,
+  74.0698% {
+    content: "r";
+  }
+  56.9767%,
+  72.9302% {
+    content: "re";
+  }
+  58.1163%,
+  71.7907% {
+    content: "rea";
+  }
+  59.2558%,
+  70.6512% {
+    content: "read";
+  }
+  60.3953%,
+  69.5116% {
+    content: "reade";
+  }
+  61.5349%,
+  68.3721% {
+    content: "reader";
+  }
+
+  78.6279%,
+  96.8605% {
+    content: "";
+  }
+  79.7674%,
+  95.7209% {
+    content: "h";
+  }
+  80.9070%,
+  94.5814% {
+    content: "hu";
+  }
+  82.0465%,
+  93.4419% {
+    content: "hum";
+  }
+  83.1860%,
+  92.3023% {
+    content: "huma";
+  }
+  84.3256%,
+  91.1628% {
+    content: "human";
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.typewriter {
+  --caret: currentcolor;
+  color: rgb(37, 112, 231);
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+.typewriter.thick::after {
+  border-right: 1ch solid var(--caret);
+}
+
+.typewriter.nocaret::after {
+  border-right: 0;
+}
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+
+  @keyframes sequencePopup {
+    0%,
+    100% {
+      content: "developer";
+    }
+    25% {
+      content: "writer";
+    }
+    50% {
+      content: "reader";
+    }
+    75% {
+      content: "human";
+    }
+  }
+
+  .typewriter::before {
+    content: "developer";
+    animation: sequencePopup 12s linear infinite;
+  }
+}
+
+.aboutme {
+  min-width: 600px;
+}
+
+.hline {
+  margin-top: 50px;
+  margin-left: 75px;
+  margin-right: 75px;
+  margin-bottom: 50px;
+}
+
+.skills-title {
+  display: flex;
+  padding-top: 25px;
+  margin-bottom: 75px;
+}
+.pro-title {
+  display: flex;
+}
+.school-title,
+.about-title {
+  display: flex;
+  padding-top: 25px;
+  margin-bottom: 25px;
+}
+.contact-image,
+.skills-image {
+  margin-left: 65px;
+  margin-right: 20px;
+}
+.pro-image,
+.school-image,
+.about-image {
+  margin-left: 55px;
+  margin-right: 8px;
+}
+.skills-heading {
+  margin-top: 8px;
+  color: rgb(247, 111, 8);
+}
+.school-heading,
+.about-heading {
+  margin-top: 30px;
+}
+.school-heading > h1,
+.pro-heading > h1,
+.about-heading > h1,
+.skills-heading > h1 {
+  color: rgb(247, 111, 8);
+  font-size: 48px;
+}
+.skills-heading h1:hover {
+  color: rgb(13, 222, 13);
+}
+.about-heading h1:hover {
+  color: rgb(13, 222, 13);
+}
+.school-heading h1:hover {
+  color: rgb(13, 222, 13);
+}
+.pro-heading h1:hover {
+  color: rgb(13, 222, 13);
+}
+.overallhead > h1,
+.skillstech > h1 {
+  margin-left: 200px;
+}
+.skillpngs {
+  margin-left: 240px;
+}
+.skillpngs > img {
+  margin: 10px;
+}
+.techskills {
+  margin-bottom: 10px;
+}
+.interskills {
+  max-width: 900px;
+  margin-left: 240px;
+  margin-bottom: 30px;
+}
+.contacts-heading > h1 {
+  margin-top: 10px;
+  font-size: 48px;
+}
+.contact-title {
+  display: flex;
+}
+.github_image {
+  margin-left: 200px;
+  margin-right: 30px;
+}
+.whole {
+  background-color: aliceblue;
+}
+
+.contactlinks > a {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.contactlinks > .firstlink {
+  margin-left: 200px;
+}
+.contactlinks {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.aboutdesc {
+  max-width: 900px;
+  margin-left: 180px;
+  margin-bottom: 30px;
+}
+.school-heading {
+  margin-left: 5px;
+}
+.education {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 80px;
+}
+
+.card {
+  margin: 20px;
+}
+
+.pro-heading {
+  margin-top: 25px;
+}
+
+.pro-heading > h1 {
+  font-size: 48px;
+}
+
+.pro-projects {
+  margin-left: 150px;
+}
+.onetitle {
+  display: flex;
+}
+.twotitle > h1 {
+  margin-top: 10px;
+}
+
+.skills-heading {
+  display: flex;
+}
